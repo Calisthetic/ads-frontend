@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "3b97f644-1bdb-476f-bace-f1294c9f2b79",
+		"name": "ads-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost/api/ads",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/ads",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"ads"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/api/ad/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "text",
+							"value": "Текст объявления",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Григорий",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "88005553535",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api/ad/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"ad",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
