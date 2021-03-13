@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "6898699a-777b-4f81-ae39-104fe99472b8",
+		"name": "ads",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "db",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "text",
+							"value": "Текст объявления",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Банан",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "+88005553535",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api.php?add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api.php"
+					],
+					"query": [
+						{
+							"key": "add",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api.php?all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api.php"
+					],
+					"query": [
+						{
+							"key": "all",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
